@@ -1,0 +1,4 @@
+[
+  { id: 1, title: 'Coca Cola', price: 10, thumbnail: 'cocacola.png' },
+  { title: 'producto2', price: 10, thumbnail: 'producto2.png', id: 2 }
+]
