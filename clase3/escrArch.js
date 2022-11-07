@@ -1,6 +1,6 @@
 module.exports = (mensaje, callback) => {
   // simulamos la escritura del mensaje en el archivo
-      setTimeout(() => {
+    setTimeout(() => {
       console.log('escribi en el archivo')
       callback()
     }, 2000)
