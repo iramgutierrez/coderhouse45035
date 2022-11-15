@@ -1,0 +1,1 @@
+console.log('Bienvenidos a la clase 6!')

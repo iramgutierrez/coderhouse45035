@@ -24,3 +24,5 @@ const producto = {
 
 productosContenedor.save(producto)
 productosContenedor.getById(1)
+
+module.exports = Contendor
