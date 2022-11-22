@@ -1,0 +1,78 @@
+USERS API (CRUD)
+
+GET    /api/users
+POST   /api/users
+GET    /api/users/:id
+UPDATE /api/users/:id
+DELETE /api/users/:id
+
+|=============|
+|    USERS    |
+|=============|
+|    id       |
+|    nombre   |
+|    email    |
+|    lastname |
+|    age      |
+|=============|
+
+
+|=============|
+|    COURSES  |
+|=============|
+|    id       |
+|    name     |
+|    teacher  |
+|    duration |
+|    date     |
+|=============|
+
+
+GET /api/users
+
+200 OK
+
+[
+  {
+    "id": 1,
+    "nombre": "iram",
+    "email": "iram@mail.com"
+    "details": "http://localhost:8080/api/users/1",
+    "courses": "http://localhost:8080/api/courses?userId=1",
+  }
+]
+
+http://localhost:8080/api/users/1
+
+200 OK
+
+{
+  "id": 1,
+  "nombre": "iram",
+  "email": "iram@mail.com",
+  "lastname": "gutierrez",
+  "age": 33
+}
+
+http://localhost:8080/api/courses?userId=1
+
+200 OK
+
+[
+  {
+    "id": 1,
+    "name": "Programación backend",
+    "teacher": "iram gutierrez",
+    "userId": 1,
+    "duration": "6 weeks",
+    "date": ""Nov 2022"
+  },
+  {
+    "id": 2,
+    "name": "Programación web",
+    "teacher": "iram gutierrez",
+    "userId": 1,
+    "duration": "6 weeks",
+    "date": ""Nov 2022"
+  }
+]
