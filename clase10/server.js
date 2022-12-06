@@ -84,6 +84,10 @@ app.post('/personas', (req, res) => {
   return res.redirect('/form')
 })
 
+app.get('/personas', (req, res) => {
+  return res.json(personas)
+})
+
 const PORT = 8080
 
 const server = app.listen(PORT, () => console.log(`Servidor escuchando en el puerto ${PORT}`))
